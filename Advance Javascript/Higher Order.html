@@ -1,0 +1,23 @@
+<script>
+    /* The methods which accepts another fuction as a argument such methods
+    are called higher order functions. */
+
+    arr = [10, 20, 30, 40, 50];
+    even = arr.filter(function (ele) {
+        if (ele % 2 === 0) {
+            return ele;
+        }
+    });
+
+    function greet(name) {
+        console.log("Hello", name);
+    }
+
+    function processName(name, callback) {
+        callback(name);
+    }
+
+    processName('Abhi', greet);
+    processName('Puja', (name) => console.log("Hello", name));
+
+</script>

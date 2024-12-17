@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .update {
+            color: blue;
+            background-color: #fff;
+            border: solid 2px black;
+            border-radius: 80%;
+        }
+
+        div {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="counter=box">
+        <h3 id="count">0</h3>
+        <div></div>
+        <button class="update" onclick="increment()">+</button>
+        <button class="update" onclick="decrement()">-</button>
+        <button onclick="reset()">reset</button>
+
+        <script>
+            let counter = 0;
+
+            function update() {
+                let count = document.getElementById('count');
+                count.textContent = counter;
+            }
+
+            function increment() {
+                counter++;
+                update();
+            }            
+
+            function decrement() {
+                counter--;
+                update();
+            }
+
+            function reset() {
+                counter = 0;
+                update();
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener()</title>
+</head>
+
+<body>
+    <p id="para">Welcome to JS DOM properties</p>
+    <button id="button">Click</button>
+
+    <script>
+        let elem = document.getElementById('para');
+        let btn = document.getElementById("button");
+        let toogle = false;
+
+        btn.addEventListener("click", function fun() {
+            if (!toogle) {
+                elem.classList.add("styleContent");
+                toogle = true;
+            }
+            else {
+                elem.classList.remove("styleContent");
+                toogle = false;
+            }
+        });
+
+    </script>
+</body>
+
+</html>

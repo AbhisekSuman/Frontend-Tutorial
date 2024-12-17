@@ -1,0 +1,8 @@
+p {
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 2px dotted white;
+    padding: 5px;
+    font-size: 40px;
+}

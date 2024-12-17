@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText, innerHtml, createElement, appendChild, classList.add(),
+        classList.remove()
+    </title>
+
+    <style>
+        body {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            /* height: 100px; */
+            /* width: 100px; */
+            display: flex;
+            /* border: solid 1px black; */
+            flex-direction: column;
+            align-items: center;
+            gap: -10px;
+            padding-top: 0px;
+        }
+
+        button {
+            height: 20px;
+            width: 50px;
+            margin-top: 40px;
+        }
+
+        p {
+            height: fit-content;
+            width: fit-content;
+            /* border: solid 1px black; */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p s id="para"></p>
+        <button onclick="fun()">Click</button>
+    </div>
+
+    <script>
+        let toogle = false;
+        let elem = document.getElementById('para');
+        function fun() {
+            if (!toogle) {
+                // elem.innerText = "Welcome to JS";
+                elem.innerHTML = `Welcome to 
+                <span style='color:blue; font-weight:bold; font-size:20px;'>JS</span>`
+                toogle = true;
+            } else {
+                elem.innerText = "";
+                toogle = false;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

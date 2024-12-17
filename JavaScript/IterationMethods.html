@@ -1,0 +1,42 @@
+<script>
+    let arr = [10, 20, 30, 40, 50];
+
+    for (let i = 0; i < arr.length; i++) {
+        const element = arr[i];
+        console.log(element);
+    }
+
+    // ForEach function:-
+
+    let arr1 = [10, 20, 30];
+    arr1.forEach(function(elem, index)  {
+        console.log(elem, index);
+    });
+
+    arr1.forEach((elem) => console.log(elem));
+
+    let arr2 = [10, 20, 21, 30, 33];
+
+    let evenArr = [];
+
+    for (let i = 0; i < arr2.length; i++) {
+        const element = arr2[i];
+        if (element % 2 === 0) {
+            evenArr.push(element);
+        }
+    }
+    console.log(evenArr);
+
+    let even = arr2.filter(elem => elem % 2 == 0);
+    console.log("Even numbers are: ", even);
+
+    let arr4 = [1, 2, 3, 4];
+    let square = arr4.map(elem => elem * elem);
+    console.log("Squares: ", square);
+
+    let sum = arr4.reduce((a, b)=> a + b, 0);
+    console.log("Sum: ", sum);
+
+    let product =arr4.reduce((acc, elem) => acc * elem);
+    console.log(product);
+</script>

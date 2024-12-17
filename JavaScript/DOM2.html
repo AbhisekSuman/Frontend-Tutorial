@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>querySelector</title>
+</head>
+<body>
+    <p id="para">Para1</p>
+    <p id="para">Para2</p>
+    <p id="para">Para3</p>
+
+    <script>
+        let elem = document.querySelectorAll(".para");
+        console.log(elem);
+
+        elem.forEach((e) => console.log(e.textContent));
+    </script>
+</body>
+</html>

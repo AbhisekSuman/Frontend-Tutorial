@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByClassName</title>
+</head>
+<body>
+    <p class="para">Paragraph 1</p>
+    <p class="para">Paragraph 2</p>
+    <p class="para">Paragraph 3</p>
+
+    <script>
+        let elems = document.getElementsByClassName('para');
+        console.log(elems);
+        let index = 1;
+
+        function handleClick() {   
+            let newElem = document.createElement('h1');
+            newElem.textContent = `Heading ${index}`;
+            index = index + 1;
+            console.log(newElem);
+            document.body.appendChild(newElem);
+        }
+    </script>
+    <button onclick="handleClick()">Click</button>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Live Collection V/S Static Node List</title>
+</head>
+<body>
+    <p class="para">PAra 1</p>
+    <p class="para">Para 2</p>
+    <p class="para">Para 3</p>
+
+    <script>
+        let ele = document.getElementsByClassName("para");
+        console.log(ele.length);
+
+        let newele = document.createElement('p');
+        console.log(newele);
+        newele.textContent = "Abhi";
+        
+        document.body.appendChild(newele);
+
+        newele.className = "para";
+        console.log(ele.length);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList.add(), classList.remove()</title>
+
+    <style>
+        .styleContent {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        /* #para:hover {
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+        } */
+    </style>
+</head>
+
+<body>
+    <p id="para">Welcome to JS DOM properties</p>
+    <button onclick="fun()">Click</button>
+
+    <script>
+        let elem = document.getElementById('para');
+        let toogle = false;
+
+        function fun() {
+            if (!toogle) {
+                elem.classList.add("styleContent");
+                toogle = true;
+            }
+            else {
+                elem.classList.remove("styleContent");
+                toogle = false;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

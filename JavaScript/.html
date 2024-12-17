@@ -1,0 +1,19 @@
+<script>
+
+    arr = [1, 2, 3, 4, 5];
+    // even = [];
+     
+    //  for (let i = 0; i < arr.length; i++) {
+    //     const elem = arr[i];
+    //     if (elem % 2 === 0) {
+    //         even.push(elem);
+    //     }
+    //  }
+
+    //  console.log("Even Array is: ", even);
+
+    let even = arr.filter(function(elem) {
+        return elem % 2 === 0;
+    });
+     console.log("Even Array is: ", even);
+</script>

@@ -1,0 +1,37 @@
+<script>
+    class Employee {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        work() {
+            console.log(this.name, " is working.");
+        }
+
+        details() {
+            console.log("Employee name is: ", this.name);
+            console.log("Employee age is: ", this.age);
+        }
+    }
+
+    class WorkDetails extends Employee {
+        constructor(name, age, sal, des, id) {
+            this.name = name;
+            this.age = age;
+            this.sal = sal;
+            this.des = des;
+            this.id = id;
+        }
+    }
+
+    let e1 = new Employee("Abhisek", 21);
+    e1.work();
+    e1.details();
+
+    let e2 = new Employee("Will", 22);
+    e2.work();
+    e2.details();
+
+    let wde1 = new WorkDetails("Mark", 33, 50000, "Developer", 1001);
+</script>

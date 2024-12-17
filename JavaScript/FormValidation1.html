@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Name Validation</title>
+</head>
+<body>
+    <form onsubmit="validate()" >
+        <label for="name">First Name</label>
+        <span style="color: red;">*</span>
+        <input type="text" id="name" required>
+        <br><br>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        function validate() {
+            let name = document.getElementById('name').value;
+            if (name === '') {
+                alert("Enter a valid name");
+                return false;
+            } 
+            console.log("Form submitted...")
+            return false;
+        }
+    </script>
+</body>
+</html>

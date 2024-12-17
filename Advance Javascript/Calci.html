@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" id="val1" placeholder="Enter Value1">
+    <input type="text" id="val2" placeholder="Enter Value2">
+
+    <h3 id="res">Result</h3>
+    <button id="btn" onclick="Add()">Add</button>
+
+    <script>
+        function Add() {
+            let val1 = Number(document.getElementById('val1').value);
+            let val2 = Number(document.getElementById('val2').value);
+
+            let sum = val1 + val2;
+            let res = document.getElementById('res');
+            res.innerText = `Adiition result: ${sum}`;
+        }
+
+    </script>
+</body>
+</html>

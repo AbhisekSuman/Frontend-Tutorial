@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label for="name">First Name:</label>
+            <input type="text" id="name" required title="Please Enter Your Name" placeholder="Your Name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required title="Please Enter Your Email" placeholder="abc@xyz..com">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password">
+            <br><br>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your Age" max="25" min="18">
+            <br><br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+            <br><br>
+            <label for="time">Select Time</label>
+            <input type="time" name="time" id="time">
+            <br><br>
+            <label for="link">Enter your URL</label>
+            <input type="url" name="link" id="link">
+            <br><br>
+
+
+            <label for="checkbox1">Skills:</label> <br>
+            <input type="checkbox" value="Java"> Java
+            <input type="checkbox" value="Python"> Python
+            <input type="checkbox" value="NodeJS"> Node JS
+            <input type="checkbox" value="SQL"> SQL
+            <input type="checkbox" value="Testing"> Testing
+            <br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="M"> Male
+            <input type="radio" name="gender" value="F"> Female
+            <input type="radio" name="gender" value="O"> Other
+            <br><br>
+
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="">Select one city</option>
+                <option value="bnglr">Bengaluru</option>
+                <option value="mum">Mumbai</option>
+                <option value="ndls">New Delhi</option>
+                <option value="kolkota">Kolkota</option>
+            </select>
+            <br> <br>
+
+            <label for="resume">Upload your Resume</label>
+            <input type="file" name="resume" id="resume" accept=".pdf">
+            <br><br>
+
+            <label for="vol">Volume</label>
+            <input type="range" name="vol" id="vol">
+            <br><br>
+
+            <label for="feedback">FeedBack</label> <br>
+            <textarea name="feedback" id="feedback">Enter your feedback here</textarea>
+            <br><br>
+            <button type="submit">SUBMIT</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>

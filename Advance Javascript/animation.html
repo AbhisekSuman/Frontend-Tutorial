@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        .circle {
+            background-color: red;
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            border: 1px solid black;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            position: absolute;
+        }
+
+        @keyframes move {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 0px;
+                left: 450px;
+            }
+            50% {
+                top: 450px;
+                left: 450px;
+            }
+            75% {
+                top: 450px;
+                left: 0px;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures 2</title>
+</head>
+
+<body>
+    <button onclick="operations.increment()">Increment</button>
+    <button onclick="operations.decrement()">decrement</button>
+    <button onclick="operations.reset()">Reset</button>
+
+    <script>
+        function calci() {
+            let count = 0;
+            return {
+                increment: function () {
+                    console.log(++count);
+                },
+
+                decrement: function () {
+                    console.log(--count);
+                },
+
+                reset: function () {
+                    count = 0;
+                    console.log(count);
+                }
+            }
+        }
+
+        let operations = calci();
+        console.log(operations);
+        // console.log(typeof operations);
+
+    </script>
+</body>
+
+</html>

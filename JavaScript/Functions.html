@@ -1,0 +1,46 @@
+<script>
+    /*
+    // without input and without output
+    function add() {
+        var a = 10;
+        var b = 20;
+        console.log("Addition is: ", a + b);
+    }
+    add(); // calling of function
+
+    sub(82, 2);
+    // With input and without output
+    function sub(a, b) {
+        console.log("Substraction is: ", a - b);
+    }
+
+    // With input with output
+    function mul(a, b) {
+        return a * b;
+    } 
+
+    console.log("Multipication is: ", mul(10, 20));
+    */
+
+//    Different ways of declaring functions:
+//    1. Function Declaration
+      function greet(name) {
+        return `Hello ${name}, hey how are you`;   
+      }  
+      console.log(greet("Abhi"));
+
+//   2. Function Experssion
+        let add = function add(a, b) {
+            return a + b;
+        }
+
+        let res = add(30, 40);
+        console.log(res);
+
+//   3. Arrow Function: The concise way of declaring fun.
+        let mul = (x, y) => console.log(x * y);
+        mul(8, 9);
+
+        let adition = (a, b) => console.log("Addition is: ", a + b);
+        adition(100, 200);
+</script>

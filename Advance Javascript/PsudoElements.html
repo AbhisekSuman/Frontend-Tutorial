@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        p::before {
+            content: "Note. ";
+        }
+
+        p::after {
+            content: ".";
+        }
+
+        p::first-line {
+            background-color:aquamarine;
+        }
+
+        p::first-letter {
+            font-weight: bold;
+        }
+
+        p::selection {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit provident, quas expedita aspernatur molestiae placeat beatae dicta, dignissimos debitis natus ipsa, quod deleniti perferendis doloribus? Eveniet similique id possimus.</p>
+</body>
+</html>
